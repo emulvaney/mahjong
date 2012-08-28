@@ -1,0 +1,56 @@
+
+Our Own Version of Mahjongg Solitaire
+
+Copyright (c) 2001 Eric Mulvaney, Michelle Bondy
+
+
+INTRODUCTION
+
+This is an old game I wrote for my mother back in 2001, with Michelle
+doing the artwork.  It's pretty basic, but comes with its own editor.
+
+To build, you will need the Allegro game programming library and
+tools.  The code is old, but seems to compile fine albeit with several
+warnings about deprecated functions.
+
+
+HOW TO PLAY
+
+The rules are the same for this as for other Mahjongg Solitaire games
+I remember.  If you've played one of those, you should be fine.
+
+Basically, you have to find (and click) matching tiles.  You can only
+click on tiles that are not covered by other tiles, and are not
+horizontally adjacent two other tiles (on its left and right).
+
+When you click your first tile, it will be highlighted in green.  If
+the next tile you click matches the first, both tiles will disappear.
+Otherwise something interesting happens: the new tile is highlighted
+in green, and the old tile's highlight changes to blue.
+
+Blue-highlighted tiles are remembered selections.  You can click the
+green-highlighted tile to deselect it and automatically re-select the
+blue-highlighted one (making it green-highlighted).  This will also
+happen if you find a match for the green-highlighted tile.
+
+Once you've cleared the entire board, you've won.  If you can't match
+anymore tiles, it will tell you, and you'll either have to start a new
+game or undo a few moves to try again.  The "Help" button will also
+tell you how many moves there are--which may not be all that helpful.
+
+
+GAME EDITOR / PLAYING CUSTOM LAYOUTS
+
+When the game starts, you have the option to edit an existing layout
+file.  To create a new file, however, you have to start the game with
+a magic incantation:
+
+./mahjongg --edit NAME.lyt --title TITLE
+
+If NAME.lyt already exists, it will be loaded.  You can omit the
+--title part when you load an existing layout, or if you don't intend
+to rebuild the game with your new layout--titles are only shown for
+built-in layouts.
+
+Custom layouts don't appear on the "new game" list.  Instead you have
+to click the "load from file" option to see the directory listing.
