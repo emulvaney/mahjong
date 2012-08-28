@@ -1,5 +1,5 @@
 /*
- * Our Own Version of Mahjongg Solitare
+ * Our Own Version of Mahjongg Solitaire
  * Copyright (c) 2001 Eric Mulvaney, Michelle Bondy
  *
  * This program is free software; you can redistribute it and/or modify
@@ -602,7 +602,7 @@ help:
   {
     defaultLayout();
 
-    if(alert("Our Own Version of Mahjongg Solitare, v0.1.4", NULL,
+    if(alert("Our Own Version of Mahjongg Solitaire, v0.1.4", NULL,
 	     "Copyright (c) 2001 Eric Mulvaney, Michelle Bondy",
 	     "Play", "Edit", 0, 0) == 2
 	&& file_select_ex("Please select layout file to edit:", path, "lyt",
