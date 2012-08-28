@@ -526,7 +526,7 @@ help:
 
   set_color_depth(SCREEN_DEPTH);
 
-  if(set_gfx_mode(GFX_AUTODETECT,
+  if(set_gfx_mode(GFX_AUTODETECT_WINDOWED,
       SCREEN_WIDTH,   SCREEN_HEIGHT,
       SCREEN_WIDTH*2, SCREEN_HEIGHT) < 0)
   {
