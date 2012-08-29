@@ -8,23 +8,23 @@ BITMAPS = new_game.bmp undo.bmp help.bmp quit.bmp tile.bmp \
 LAYOUTS = block.lyt flat.lyt frogger.lyt precious.lyt ptrad.lyt \
           pyramid.lyt steps.lyt theta.lyt
 
-all: mahjongg
+all: mahjong
 
 clean:
-	rm -f *.o mahjongg.h mahjongg.dat
+	rm -f *.o mahjong.h mahjong.dat
 
 distclean: clean
-	rm -f mahjongg *~
+	rm -f mahjong *~
 
-mahjongg: mahjongg.c mahjongg.h mahjongg.dat
-	$(CC) -Wall -o mahjongg mahjongg.c `allegro-config --cflags --libs`
-	exedat -c mahjongg mahjongg.dat
+mahjong: mahjong.c mahjong.h mahjong.dat
+	$(CC) -Wall -o mahjong mahjong.c `allegro-config --cflags --libs`
+	exedat -c mahjong mahjong.dat
 
-mahjongg.h: mahjongg.dat
-	rm -f mahjongg.h
-	dat mahjongg.dat -h mahjongg.h
+mahjong.h: mahjong.dat
+	rm -f mahjong.h
+	dat mahjong.dat -h mahjong.h
 
-mahjongg.dat: $(BITMAPS) $(LAYOUTS)
-	rm -f mahjongg.dat
-	dat -a mahjongg.dat -t BMP $(BITMAPS)
-	dat -a mahjongg.dat -t OTHER $(LAYOUTS)
+mahjong.dat: $(BITMAPS) $(LAYOUTS)
+	rm -f mahjong.dat
+	dat -a mahjong.dat -t BMP $(BITMAPS)
+	dat -a mahjong.dat -t OTHER $(LAYOUTS)

@@ -1,5 +1,5 @@
 
-Our Own Version of Mahjongg Solitaire
+Our Own Version of Mahjong Solitaire
 
 Copyright (c) 2001 Eric Mulvaney, Michelle Bondy
 
@@ -16,7 +16,7 @@ warnings about deprecated functions.
 
 HOW TO PLAY
 
-The rules are the same for this as for other Mahjongg Solitaire games
+The rules are the same for this as for other Mahjong Solitaire games
 I remember.  If you've played one of those, you should be fine.
 
 Basically, you have to find (and click) matching tiles.  You can only
@@ -45,7 +45,7 @@ When the game starts, you have the option to edit an existing layout
 file.  To create a new file, however, you have to start the game with
 a magic incantation:
 
-./mahjongg --edit NAME.lyt --title TITLE
+./mahjong --edit NAME.lyt --title TITLE
 
 If NAME.lyt already exists, it will be loaded.  You can omit the
 --title part when you load an existing layout, or if you don't intend

@@ -1,5 +1,5 @@
 /*
- * Our Own Version of Mahjongg Solitaire
+ * Our Own Version of Mahjong Solitaire
  * Copyright (c) 2001 Eric Mulvaney, Michelle Bondy
  *
  * This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 #include <string.h>
 #include <allegro.h>
 
-#include "mahjongg.h"
+#include "mahjong.h"
 
 #define SCREEN_WIDTH  (640)
 #define SCREEN_HEIGHT (480)
@@ -508,7 +508,7 @@ int main(int argc, char *argv[])
       else
       {
 help:
-	printf("usage: mahjongg [--edit <layout> [--title <layout title>]]\n");
+	printf("usage: mahjong [--edit <layout> [--title <layout title>]]\n");
 	return 0;
       }
   }
@@ -602,7 +602,7 @@ help:
   {
     defaultLayout();
 
-    if(alert("Our Own Version of Mahjongg Solitaire, v0.1.4", NULL,
+    if(alert("Our Own Version of Mahjong Solitaire, v0.1.4", NULL,
 	     "Copyright (c) 2001 Eric Mulvaney, Michelle Bondy",
 	     "Play", "Edit", 0, 0) == 2
 	&& file_select_ex("Please select layout file to edit:", path, "lyt",
